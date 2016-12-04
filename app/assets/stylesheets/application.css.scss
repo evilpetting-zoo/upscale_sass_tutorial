@@ -19,19 +19,13 @@
  @import "font-awesome-sprockets";
   @import "font-awesome"; 
 
-.navbar, .home-callout {
-    //background by Twitter: @_ighosh from uigradients.com
-    background: #00c6ff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border: none;
-}
 
 // Typography styles
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
 
+//Home Styles
 .home-callout {
   margin-top: -20px;
   padding-top: 50px;
@@ -39,6 +33,8 @@ h1, h2, h3 {
   color: white;
 }
 
+
+//Nav Styles
 .navbar-default .navbar-brand, 
 .navbar-default .navbar-nav li a{
   color: white; //color text of navbar
@@ -51,4 +47,23 @@ h1, h2, h3 {
 .navbar-brand {
   font-family: 'Open Sans';
   font-weight: 800;
+}
+
+.navbar, .home-callout {
+    //background by Twitter: @_ighosh from uigradients.com
+    background: #00c6ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+    border: 2px solid white;
+    &:hover, &:focus {
+      background-color: #00c6ff;
+    }
 }
