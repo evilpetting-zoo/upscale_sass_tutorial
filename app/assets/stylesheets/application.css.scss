@@ -36,20 +36,11 @@ h1, h2, h3 {
   color: white;
 }
 
-.navbar-default .navbar-brand{
+.navbar-default .navbar-brand, 
+.navbar-default .navbar-nav li a{
   color: white; //color text of navbar
-}
-
-.navbar-default .navbar-brand:hover {
-  color: white;
-  opacity: 0.75;
-}
-
-.navbar-default .navbar-nav li a {
-  color: white; //'about' on navbar color
-}
-
-.navbar-default .navbar-nav li a:hover {
-  color: white; //'about' on navbar color hover
-  opacity: 0.75;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
 }
